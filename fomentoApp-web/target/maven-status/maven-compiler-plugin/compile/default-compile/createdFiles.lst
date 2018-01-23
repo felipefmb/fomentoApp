@@ -1,0 +1,10 @@
+com\felipebatista\fomentoapp\api\NecessidadesResource.class
+com\felipebatista\fomentoapp\api\ProdutosResource.class
+com\felipebatista\fomentoapp\util\ConstraintViolationMapper.class
+com\felipebatista\fomentoapp\api\ClientesResource.class
+com\felipebatista\fomentoapp\api\AbstractCrudResource.class
+com\felipebatista\fomentoapp\util\EntityNotFoundMapper.class
+com\felipebatista\fomentoapp\api\JaxRsActivator.class
+com\felipebatista\fomentoapp\api\FornecedoresResource.class
+com\felipebatista\fomentoapp\api\PropostasResource.class
+com\felipebatista\fomentoapp\api\UsuariosResource.class

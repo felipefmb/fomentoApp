@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row justify-content-sm-center">
+        <div class="col-sm-8">
+            <h2 class="title">{{vm.title}}</h2>
+            <form>
+
+                <div class="form-group">
+                    <label>Fornecedor</label>
+                    <select class="form-control" ng-model="vm.record.fornecedores" ng-options="fornecedor as fornecedor.nome for fornecedor in vm.fornecedores track by fornecedor.id">
+                    </select>
+                </div>
+
+                <div class="form-group">
+                        <label>Necessidade</label>
+                        <select class="form-control" ng-model="vm.record.necessidades" ng-options="necessidade as necessidade.descricao for necessidade in vm.necessidades track by necessidade.id">
+                        </select>
+                    </div>
+
+                <div class="form-group">
+                    <label>Descrição</label>
+                    <textarea type="text" ng-model="vm.record.descricao" class="form-control" rows="10"></textarea>
+                    <small class="form-text text-muted">Digite uma descrição.</small>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Comentário</label>
+                    <input type="text" ng-model="vm.record.comentario" class="form-control">
+                </div>
+
+                <button ng-click="vm.save()" type="button" class="btn btn-primary btn-lg">Salvar Registro</button>
+                <a ui-sref="proposta.list" class="btn btn-danger">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>
